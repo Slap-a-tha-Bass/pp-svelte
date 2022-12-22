@@ -42,10 +42,10 @@
         ${dark ? 'text-white' : 'text-gray-900'}`}
 		>
 			<ul class="text-lg">
-				<li class="mt-3">Home</li>
-				<li class="mt-3">Projects</li>
-				<li class="mt-3">Blog</li>
-				<li class="mt-3">Contact</li>
+				<li on:click={toggleMenu} on:keydown={toggleMenu} class="mt-3"><a href="/">Home</a></li>
+				<li on:click={toggleMenu} on:keydown={toggleMenu} class="mt-3">Projects</li>
+				<li on:click={toggleMenu} on:keydown={toggleMenu} class="mt-3">Blog</li>
+				<li on:click={toggleMenu} on:keydown={toggleMenu} class="mt-3">Contact</li>
 			</ul>
 		</div>
 	{/if}
