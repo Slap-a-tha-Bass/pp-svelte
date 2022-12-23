@@ -13,9 +13,9 @@
 </script>
 
 <div
-	class={`relative flex items-center justify-between px-10 py-6 
-        ${dark ? 'bg-gray-900' : 'bg-gray-300'} 
-        ${dark ? 'text-gray-100' : 'text-gray-900'}
+	class={`relative flex items-center justify-between px-4 sm:px-10 py-5 
+        ${dark ? 'bg-gray-800' : 'bg-gray-100'} 
+        ${dark ? 'text-gray-100' : 'text-indigo-900'}
         `}
 >
 	<div class="h-8 w-8">
@@ -27,7 +27,7 @@
 			{/if}
 		</button>
 	</div>
-	<h1 class="text-3xl font-bold text-center">Pariah Projects</h1>
+	<h4 class="text-2xl sm:text-5xl text-center underline">Pariah Projects</h4>
 	<button class="h-6 w-6" on:click={toggleDark}>
 		{#if dark == true}
 			<MdWbSunny />
@@ -37,8 +37,8 @@
 	</button>
 	{#if open == true}
 		<div
-			class={`absolute top-20 left-0 w-64 max-h-max z-10 p-10        
-		${dark ? 'bg-gray-900' : 'bg-gray-300'} 
+			class={`absolute top-16 sm:top-20 left-4 w-64 max-h-max z-10 p-10 border-double border-8 border-indigo-900 rounded-lg       
+		${dark ? 'bg-gray-900' : 'bg-gray-100'} 
         ${dark ? 'text-white' : 'text-gray-900'}`}
 		>
 			<ul class="text-lg">
