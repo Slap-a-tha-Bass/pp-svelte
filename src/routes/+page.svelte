@@ -2,16 +2,16 @@
 	import Stylesheet from '../theme/Stylesheet.svelte';
 	import { darkTheme } from '../theme/store.js';
 	import Header from '../components/Header.svelte';
-
+	import { Lottie } from 'lottie-svelte';
 	$: dark = $darkTheme;
 </script>
 
 <Stylesheet />
 
 <div class:dark>
-	<div class="min-h-screen transition bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-white">
+	<div class="min-h-screen transition bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-white">
 		<Header />
-		<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+		<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
 			<h1 class="text-4xl font-bold mb-4">Welcome to Pariah Projects!</h1>
 			<p class="text-lg mt-2">
 				We are a team of experienced web designers and developers who are passionate about creating
@@ -19,6 +19,11 @@
 				businesses and individuals establish a strong online presence that reflects their unique
 				brand and values.
 			</p>
+		</div>
+		<div class="flex justify-center">
+			<div class="max-w-3xl">
+				<Lottie path="src/files/computer.json" speed={1} autoplay={true} loop={true} />
+			</div>
 		</div>
 		<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 			<h1 class="text-4xl font-bold mb-4">With Pariah Projects, you can expect:</h1>

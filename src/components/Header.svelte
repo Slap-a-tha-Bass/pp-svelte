@@ -14,12 +14,12 @@
 
 <div
 	class={`relative flex items-center justify-between px-10 py-6 
-        ${dark ? 'bg-slate-700' : 'bg-gray-300'} 
-        ${dark ? 'text-white' : 'text-gray-900'}
+        ${dark ? 'bg-gray-900' : 'bg-gray-300'} 
+        ${dark ? 'text-gray-100' : 'text-gray-900'}
         `}
 >
 	<div class="h-8 w-8">
-		<button class="h-6 w-6" on:click={toggleMenu}>
+		<button class="h-8 w-8" on:click={toggleMenu}>
 			{#if open == true}
 				<MdClose />
 			{:else}
@@ -38,7 +38,7 @@
 	{#if open == true}
 		<div
 			class={`absolute top-20 left-0 w-64 max-h-max z-10 p-10        
-		${dark ? 'bg-slate-700' : 'bg-gray-300'} 
+		${dark ? 'bg-gray-900' : 'bg-gray-300'} 
         ${dark ? 'text-white' : 'text-gray-900'}`}
 		>
 			<ul class="text-lg">
